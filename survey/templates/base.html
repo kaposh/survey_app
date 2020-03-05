@@ -1,0 +1,21 @@
+{% load static %}
+{% block extrahead %}
+
+{% endblock %}
+<html>
+<title>Henry Schein One Survey</title>
+<head>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <img class="logo-3" src="{% static 'images/header_logo.png' %}" >
+</head>
+<body>
+    <main>
+        <div>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </main>
+</body>
+<footer class="footer-distributed">
+
+</footer>

@@ -4,5 +4,6 @@ from . import views
 
 app_name = 'feedback'
 urlpatterns = [
-    path('success', views.success, name='success'),
+    path('form', views.form, name='form'),
+    path('submit_survey', views.submit, name='submit'),
 ]

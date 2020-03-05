@@ -37,6 +37,7 @@ TEX_DIRECTORY = Path("tex") # Define the directory where tex files and pdf are e
 INSTALLED_APPS = [
     'crispy_forms',
     'feedback.apps.FeedbackConfig',
+    'survey.apps.SurveyConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -105,7 +106,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-CRISPY_TEMPLATE_PACK = 'uni_form'
+CRISPY_TEMPLATE_PACK = 'bootstrap'
+
+ALLOWED_HOSTS = ['10.240.64.163', 'localhost', '127.0.0.1','10.240.64.86']
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
