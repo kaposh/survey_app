@@ -5,6 +5,15 @@
 {% endblock %}
 {% block content %}
 <body>
+<div class="practice_header">
+    <div class="header_title">You are making a survey for practice:</div>
+    <div class="header_title">Practice:</div>
+    <div class="header_text">{{ practice.name_of_practice }}</div>
+    <div class="header_title">Practice Address</div>
+    <div class="header_text">{{ practice.address1 }}</div>
+    <div class="header_text">{{ practice.address2 }}</div>
+    <div class="header_text">{{ practice.address3 }}</div>
+</div>
 {% load crispy_forms_tags %}
 {% crispy form %}
 </body>

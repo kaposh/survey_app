@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extrahead %}
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+{% endblock %}
+{% block content %}
+<body>
+{% load crispy_forms_tags %}
+{% crispy form %}
+</body>
+{% endblock %}
